@@ -30,8 +30,6 @@ Nodeptr1 = Nodeptr(Node2)
 Nodeptr1.next = Node2.next
 Node2.next = Nodeptr1
 
-print (back,Node2,Node2.next,Nodeptr1,Nodeptr1.next)
-
 #Remove a Node
 Nodeptr1.next = Node2.next
 Node2.back = Nodeptr1
