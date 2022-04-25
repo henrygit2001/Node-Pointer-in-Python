@@ -1,0 +1,30 @@
+class Node():
+    def __init__ (self, Data):
+        self.Data = Data
+        self.next = None
+
+Node1 = Node("Hello")
+Node2 = Node("Hello")
+Node3 = Node("Hello")
+Node4 = Node("Hi")
+#Next 
+Node1.next = Node2
+Node2.next = Node3
+Node3.next = Node4
+#Pointer 
+class Nodeptr():
+    def __init__(self, NodePting):
+        self.thisNode = Node(Data = None)
+        self.thisNode.next = NodePting
+        
+Nodeptr1 = Nodeptr(Node2)
+
+# Insert a Node
+Nodeptr1.next = Node2.next
+Node2.next = Nodeptr1
+
+print (Node2,Node2.next,Nodeptr1,Nodeptr1.next)
+
+#Remove a Node
+Nodeptr1.next = Node2.next
+Node2.next = Nodeptr1
