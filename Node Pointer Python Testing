@@ -31,5 +31,5 @@ Node2.next = Nodeptr1
 
 #Remove a Node
 Nodeptr1.next = Node2.next
-(Node2.back).next = Nodeptr1
+(Node2.back).next = Nodeptr1.next
 del Node2
