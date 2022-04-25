@@ -33,7 +33,6 @@ Nodeptr1 = Nodeptr(Node2)
 
 #Remove a Node
 Nodeptr1.next = Node2.next
-print (Nodeptr1.next)
 (Node2.back).next = Nodeptr1.next
 del Node2
 
