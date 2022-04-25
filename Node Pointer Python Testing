@@ -1,12 +1,19 @@
+# Online Python - IDE, Editor, Compiler, Interpreter
+back = None
 class Node():
     def __init__ (self, Data):
         self.Data = Data
         self.next = None
+        self.back = back
 
 Node1 = Node("Hello")
+back = Node1
 Node2 = Node("Hello")
+back = Node2
 Node3 = Node("Hello")
+back = Node3
 Node4 = Node("Hi")
+back = Node4
 #Next 
 Node1.next = Node2
 Node2.next = Node3
@@ -23,8 +30,9 @@ Nodeptr1 = Nodeptr(Node2)
 Nodeptr1.next = Node2.next
 Node2.next = Nodeptr1
 
-print (Node2,Node2.next,Nodeptr1,Nodeptr1.next)
+print (back,Node2,Node2.next,Nodeptr1,Nodeptr1.next)
 
 #Remove a Node
 Nodeptr1.next = Node2.next
-Node2.next = Nodeptr1
+Node2.back = Nodeptr1
+del Node2
