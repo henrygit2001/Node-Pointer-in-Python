@@ -26,11 +26,11 @@ class Nodeptr():
         
 Nodeptr1 = Nodeptr(Node2)
 
-# Insert a Node
+# Insert a Node (Sample: Node2)
 Nodeptr1.next = Node2.next
 Node2.next = Nodeptr1
 
-#Remove a Node
+#Remove a Node (Sample: Node2)
 Nodeptr1.next = Node2.next
 Node2.back = Nodeptr1
 del Node2
